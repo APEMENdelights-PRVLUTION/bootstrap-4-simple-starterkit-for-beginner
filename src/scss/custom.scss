@@ -1,0 +1,13 @@
+// Custom.scss
+
+$mixable: #ca0027;
+
+$colors: (
+ "mixable": $mixable,
+);
+$theme-colors: (
+ "primary": $mixable
+);
+
+// Required
+@import "node_modules/bootstrap/scss/bootstrap";

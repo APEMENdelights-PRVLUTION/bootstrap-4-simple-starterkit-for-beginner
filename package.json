@@ -1,0 +1,30 @@
+{
+  "name": "bootstrap-4-simple-starterkit-for-beginner",
+  "version": "1.0.0",
+  "description": "Use this easy-in-use starterkit with auto prefix and css/scss compiling. I tried to handle all actionss included inside the package.json by using simple scripts I hope it will be helpful for you! Have fun!",
+  "main": "index.js",
+  "scripts": {
+    "css": "node-sass src/scss/custom.scss src/css/custom.css --use autoprefixer",
+    "ugly": "uglifycss src/css/custom.css > dist/css/custom.min.css",
+    "sass": "node-sass src/scss/custom.scss dist/scss/custom.min.scss --output-style compressed",
+    "min": "run-s css ugly sass",
+    "bob": "run-s css ugly sass min"
+  },
+  "author": "phil",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.2",
+    "uglifycss": "0.0.29",
+    "webpack": "^4.34.0",
+    "webpack-cli": "^3.3.4",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
+  }
+}
